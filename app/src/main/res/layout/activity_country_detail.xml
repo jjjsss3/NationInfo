@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".Country_Detail_Activity"
+    android:padding="10dp"
+    android:background="@color/background_detail">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top|center"
+                android:id="@+id/iv_cd_flag"
+                android:padding="10dp"/>
+            <LinearLayout
+                style="@style/LayoutCountryDetail">
+                <TextView
+                    style="@style/CountryDetailText1"
+                    android:text="Code: " />
+                <TextView
+                    android:id="@+id/tv_cd_code"
+                    style="@style/CountryDetailText"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/LayoutCountryDetail">
+                <TextView
+                    style="@style/CountryDetailText1"
+                    android:text="Name: " />
+                <TextView
+                    android:id="@+id/tv_cd_name"
+                    style="@style/CountryDetailText" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/LayoutCountryDetail">
+                <TextView
+                    style="@style/CountryDetailText1"
+                    android:text="The population: " />
+                <TextView
+                    android:id="@+id/tv_cd_pop"
+                    style="@style/CountryDetailText" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/LayoutCountryDetail">
+                <TextView
+                    style="@style/CountryDetailText1"
+                    android:text="The area: " />
+                <TextView
+                    android:id="@+id/tv_cd_area"
+                    style="@style/CountryDetailText" />
+                <TextView
+                    style="@style/CountryDetailText1"
+                    android:id="@+id/cd_km2"/>
+            </LinearLayout>
+            <TextView
+                style="@style/CountryDetailText1"
+                android:text="Country Map:  " />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:gravity="top|center"
+                android:id="@+id/iv_cd_map"
+                android:paddingBottom="20dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
